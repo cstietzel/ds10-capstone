@@ -73,6 +73,9 @@ kable(corpastats, format = "html", ##booktabs = "T",
   add_header_above(c(" ", " ", "Unigrams" = 2, "Bigrams" = 2, "Trigrams" = 2)) %>%
   column_spec(2:8, width = "0.9in")
 ```
+<BR>
+
+- Prediction speed and accuracy is good, however initial application launch is slow due to loading of probability tables
 
 ## Corpus Processing {.smaller}
 - Each of the excerpts was cleaned and normalized prior to *n*-gram extraction
@@ -105,7 +108,7 @@ kable(corpastats, format = "html", ##booktabs = "T",
       4. If not enough guesses, append guesses from KN unigram using w2
       5. If not enough guesses, append guesses using unigram Maximum Likelihood
 ```
-- Future improvements
+- Future Improvements for Accuracy
     - <font size="4">Increase the size of the dictionary and apply a spell check to the corpus</font>
     - <font size="4">Use high-order *n*-grams in the model and incorporate start-of-sentence tokens</font>
     - <font size="4">Allow the user to select context of phrase (News, Web, or Twitter)</font>
